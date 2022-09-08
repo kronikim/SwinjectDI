@@ -13,6 +13,9 @@
 		D8B6425028AFDD8C00D9D5FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8B6424E28AFDD8C00D9D5FF /* Main.storyboard */; };
 		D8B6425228AFDD9000D9D5FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8B6425128AFDD9000D9D5FF /* Assets.xcassets */; };
 		D8B6425528AFDD9000D9D5FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8B6425328AFDD9000D9D5FF /* LaunchScreen.storyboard */; };
+		D8B6425E28AFDE0F00D9D5FF /* Swinject in Frameworks */ = {isa = PBXBuildFile; productRef = D8B6425D28AFDE0F00D9D5FF /* Swinject */; };
+		D8B6426028B43A3600D9D5FF /* BackgroundColorProviding.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6425F28B43A3600D9D5FF /* BackgroundColorProviding.swift */; };
+		D8B6426228B43AAC00D9D5FF /* SecondVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8B6426128B43AAC00D9D5FF /* SecondVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,8 @@
 		D8B6425128AFDD9000D9D5FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8B6425428AFDD9000D9D5FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8B6425628AFDD9000D9D5FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8B6425F28B43A3600D9D5FF /* BackgroundColorProviding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundColorProviding.swift; sourceTree = "<group>"; };
+		D8B6426128B43AAC00D9D5FF /* SecondVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D8B6425E28AFDE0F00D9D5FF /* Swinject in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +69,8 @@
 				D8B6425128AFDD9000D9D5FF /* Assets.xcassets */,
 				D8B6425328AFDD9000D9D5FF /* LaunchScreen.storyboard */,
 				D8B6425628AFDD9000D9D5FF /* Info.plist */,
+				D8B6425F28B43A3600D9D5FF /* BackgroundColorProviding.swift */,
+				D8B6426128B43AAC00D9D5FF /* SecondVC.swift */,
 			);
 			path = SwinjectDI;
 			sourceTree = "<group>";
@@ -83,6 +91,9 @@
 			dependencies = (
 			);
 			name = SwinjectDI;
+			packageProductDependencies = (
+				D8B6425D28AFDE0F00D9D5FF /* Swinject */,
+			);
 			productName = SwinjectDI;
 			productReference = D8B6424528AFDD8C00D9D5FF /* SwinjectDI.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +122,9 @@
 				Base,
 			);
 			mainGroup = D8B6423C28AFDD8C00D9D5FF;
+			packageReferences = (
+				D8B6425C28AFDE0F00D9D5FF /* XCRemoteSwiftPackageReference "Swinject" */,
+			);
 			productRefGroup = D8B6424628AFDD8C00D9D5FF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,6 +153,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8B6424D28AFDD8C00D9D5FF /* ViewController.swift in Sources */,
+				D8B6426228B43AAC00D9D5FF /* SecondVC.swift in Sources */,
+				D8B6426028B43A3600D9D5FF /* BackgroundColorProviding.swift in Sources */,
 				D8B6424928AFDD8C00D9D5FF /* AppDelegate.swift in Sources */,
 				D8B6424B28AFDD8C00D9D5FF /* SceneDelegate.swift in Sources */,
 			);
@@ -356,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D8B6425C28AFDE0F00D9D5FF /* XCRemoteSwiftPackageReference "Swinject" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Swinject/Swinject.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D8B6425D28AFDE0F00D9D5FF /* Swinject */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D8B6425C28AFDE0F00D9D5FF /* XCRemoteSwiftPackageReference "Swinject" */;
+			productName = Swinject;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D8B6423D28AFDD8C00D9D5FF /* Project object */;
 }
